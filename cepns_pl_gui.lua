@@ -410,17 +410,19 @@ JFR.NewButton("SettingsAltPrediction", page_settings, {Position = UDim2.new(0.37
     JFR.SendMessage({Horizontal = true, Text = "<font size='30'>Changed team to <b>Guard</b>.</font>", Size = UDim2.new(0, 500, 0, 75), Position = UDim2.new(0.05, 0, 0.9, 0), Delay = 3})
 end})
 
+y=y+40;
+
 JFR.NewButton("SettingsESPColor4", page_settings, {Position = UDim2.new(0.075, 0, 0, y), Size = UDim2.new(0, 100, 0, 25), Text = "Inmate"}, {on = function()
     Workspace.Remote.TeamEvent:FireServer("Bright orange")
     JFR.SendMessage({Horizontal = true, Text = "<font size='30'>Changed team to <b>Inmate</b>.</font>", Size = UDim2.new(0, 500, 0, 75), Position = UDim2.new(0.05, 0, 0.9, 0), Delay = 3})
 end})
 
-JFR.NewButton("SettingsESPColor2", page_settings, {Position = UDim2.new(0.075, 0, 0, y), Size = UDim2.new(0, 100, 0, 25), Text = "Neutral"}, {on = function()
+JFR.NewButton("SettingsESPColor2", page_settings, {Position = UDim2.new(0.375, 0, 0, y), Size = UDim2.new(0, 100, 0, 25), Text = "Neutral"}, {on = function()
     Workspace.Remote.TeamEvent:FireServer("Medium stone grey")
     JFR.SendMessage({Horizontal = true, Text = "<font size='30'>Changed team to <b>Neutral</b>.</font>", Size = UDim2.new(0, 500, 0, 75), Position = UDim2.new(0.05, 0, 0.9, 0), Delay = 3})
 end})
 
-JFR.NewButton("SettingsESPColor3", page_settings, {Position = UDim2.new(0.075, 0, 0, y), Size = UDim2.new(0, 100, 0, 25), Text = "Criminal"}, {on = function()
+JFR.NewButton("SettingsESPColor3", page_settings, {Position = UDim2.new(0.675, 0, 0, y), Size = UDim2.new(0, 100, 0, 25), Text = "Criminal"}, {on = function()
     local lastPos = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").position
 	LCS = game.Workspace["Criminals Spawn"].SpawnLocation
 	LCS.CanCollide = false
