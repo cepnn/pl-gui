@@ -299,7 +299,7 @@ JFR.NewText("HomeText2", page_home, {Position = UDim2.new(0, 10, 0, 30), Size = 
 NewLine(page_home, 165)
 
 JFR.NewButton("HomeDiscord", page_home, {Position = UDim2.new(0, 10, 0, 75), Size = UDim2.new(0, 380, 0, 25), Text = "Copy Discord Invite to Clipboard"}, {on = function()
-    function() setclipboard"https://discord.gg/yDPP74FhuZ"
+    setclipboard"https://discord.gg/yDPP74FhuZ"
 end})
 
 y=5;
