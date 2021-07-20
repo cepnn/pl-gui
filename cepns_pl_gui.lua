@@ -399,7 +399,7 @@ NewlineOnLabel(JFR.GetInstance("SettingsText1"))
 y=y+60;
 JFR.NewButton("SettingsESPColor", page_settings, {Position = UDim2.new(0.075, 0, 0, y), Size = UDim2.new(0, 100, 0, 25), Text = "Guard"}, {on = function()
     Workspace.Remote.TeamEvent:FireServer("Bright blue")
-    JFR.SendMessage({Horizontal = true, Text = "<font size='30'>Changed team to <b>Guard</b>.</font><br/><font size='20'>If your team was not changed, it is most likely because it's full. Use the second button to team yourself if it's full.</font>", Size = UDim2.new(0, 500, 0, 75), Position = UDim2.new(0.05, 0, 0.9, 0), Delay = 3})
+    JFR.SendMessage({Horizontal = true, Text = "<font size='30'>Changed team to <b>Guard</b>.</font><br/><font size='20'>If your team was not changed, it is most likely because it's full. Use<br/> the second button to team yourself if it's full.</font>", Size = UDim2.new(0, 500, 0, 75), Position = UDim2.new(0.05, 0, 0.9, 0), Delay = 3})
 end})
 
 JFR.NewButton("SettingsAltPrediction", page_settings, {Position = UDim2.new(0.375, 0, 0, y), Size = UDim2.new(0, 220, 0, 25), Text = "Guard(regardless if it's full)"}, {on = function()
